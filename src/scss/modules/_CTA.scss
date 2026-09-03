@@ -1,6 +1,52 @@
-.cta {
+:root {
+  --color-primary: #000;
+  --color-primary-hover: #343434;
+
+  --color-secondary: #ffffff;
+  --color-secondary-text: #000;
+  --color-secondary-hover: #b4bbc0ff;
+
+  --color-disabled: #bbb;
+  --color-disabled-text: #ffffff;
+
+  --radius: 1rem;
+
+  --font-size-default: 1rem;
+  --font-size-small: 0.875rem;
+}
+
+.btn {
   display: inline-flex;
-  padding: 16px 20px;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 1rem 1.25rem;
+  border-radius: 1.25rem;
+  border: 0.125rem solid transparent;
+  font-size: var(--font-size-default);
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.btn-small {
+  padding: 0.5rem 0.875rem;
+  font-size: var(--font-size-small);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
 }
