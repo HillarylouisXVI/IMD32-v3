@@ -3,8 +3,8 @@
   --color-primary-hover: #343434;
 
   --color-secondary: #ffffff;
+  --color-secondary-hover: #b4bbc0;
   --color-secondary-text: #000;
-  --color-secondary-hover: #b4bbc0ff;
 
   --color-disabled: #bbb;
   --color-disabled-text: #ffffff;
@@ -25,7 +25,7 @@
   border: 0.125rem solid transparent;
   font-size: var(--font-size-default);
   font-weight: 600;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif, normal;
   text-decoration: none;
   cursor: pointer;
   transition:
