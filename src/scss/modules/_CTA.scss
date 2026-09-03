@@ -50,3 +50,13 @@
   background-color: var(--color-primary-hover);
   border-color: var(--color-primary-hover);
 }
+
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  background-color: var(--color-disabled);
+  color: var(--color-disabled-text);
+  border-color: var(--color-disabled);
+
+  cursor: not-allowed;
+  opacity: 0.6;
+}
