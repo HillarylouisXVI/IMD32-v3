@@ -13,10 +13,23 @@
   --color-disabled-secondary-text: #bbb;
 
   --radius: 1rem;
+}
 
-  --font-family-primary: "Montserrat", sans-serif;
-  --font-size-default: 1rem;
-  --font-size-small: 0.875rem;
+.buttons {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.secondary {
+  background-color: #000;
+  padding: 1.0625rem;
+  border-radius: 1rem;
 }
 
 .btn {
@@ -24,13 +37,13 @@
   align-items: center;
   justify-content: center;
   width: fit-content;
-  padding: 1rem 1.25rem;
+  padding: 1.0625rem 1.25rem;
   border-radius: 1.25rem;
   border: 0.125rem solid transparent;
 
   font-family: var(--font-family-primary);
   font-size: var(--font-size-default);
-  font-weight: 600;
+  font-weight: 400;
 
   text-decoration: none;
   cursor: pointer;
