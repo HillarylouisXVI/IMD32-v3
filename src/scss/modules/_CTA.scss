@@ -6,8 +6,11 @@
   --color-secondary-hover: #b4bbc0;
   --color-secondary-text: #000;
 
-  --color-disabled: #bbb;
-  --color-disabled-text: #ffffff;
+  --color-disabled-primary: #bbb;
+  --color-disabled-primary-text: #fff;
+
+  --color-disabled-secondary: #eceeef;
+  --color-disabled-secondary-text: #bbb;
 
   --radius: 1rem;
 
@@ -68,11 +71,21 @@
   color: var(--color-secondary-text);
 }
 
-.btn:disabled,
-.btn[aria-disabled="true"] {
-  background-color: var(--color-disabled);
-  color: var(--color-disabled-text);
-  border-color: var(--color-disabled);
+.btn-primary:disabled,
+.btn-primary[aria-disabled="true"] {
+  background-color: var(--color-disabled-primary);
+  border-color: var(--color-disabled-primary);
+  color: var(--color-disabled-primary-text);
+
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.btn-secondary:disabled,
+.btn-secondary[aria-disabled="true"] {
+  background-color: var(--color-disabled-secondary);
+  border-color: var(--color-disabled-secondary);
+  color: var(--color-disabled-secondary-text);
 
   cursor: not-allowed;
   opacity: 0.6;
