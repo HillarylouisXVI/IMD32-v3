@@ -1,0 +1,9 @@
+:root {
+  --font-family-primary: "Montserrat", sans-serif;
+  --font-size-default: 1rem;
+  --font-size-small: 0.875rem;
+}
+
+body {
+  font-family: var(--font-family-primary);
+}

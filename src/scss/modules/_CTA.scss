@@ -11,6 +11,7 @@
 
   --radius: 1rem;
 
+  --font-family-primary: "Montserrat", sans-serif;
   --font-size-default: 1rem;
   --font-size-small: 0.875rem;
 }
@@ -23,11 +24,14 @@
   padding: 1rem 1.25rem;
   border-radius: 1.25rem;
   border: 0.125rem solid transparent;
+
+  font-family: var(--font-family-primary);
   font-size: var(--font-size-default);
   font-weight: 600;
-  font-family: Montserrat, sans-serif, normal;
+
   text-decoration: none;
   cursor: pointer;
+
   transition:
     background-color 0.2s ease,
     color 0.2s ease,
@@ -49,6 +53,18 @@
 .btn-primary:hover:not(:disabled) {
   background-color: var(--color-primary-hover);
   border-color: var(--color-primary-hover);
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-secondary-text);
+  border-color: var(--color-secondary-text);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: var(--color-secondary-hover);
+  border-color: var(--color-secondary-hover);
+  color: var(--color-secondary-text);
 }
 
 .btn:disabled,
