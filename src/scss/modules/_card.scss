@@ -15,3 +15,85 @@
   object-fit: cover;
   border-radius: 1.75rem;
 }
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.25rem 0.5rem 0.75rem 0.5rem;
+  gap: 1.25rem;
+}
+
+.card-title {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card-subtitle {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.card-details {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.card-price {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-airport {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-price img,
+.card-airport img {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.25rem;
+  align-self: stretch;
+}
+
+.favorite-btn {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 2rem;
+  height: 2rem;
+
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.favorite-btn:hover {
+  opacity: 0.7;
+}
+
+.favorite-btn:hover {
+  background-color: #f4f4f4;
+  border-radius: 50%;
+}
+
+.favorite-btn img {
+  width: 1rem;
+  height: 1rem;
+}
