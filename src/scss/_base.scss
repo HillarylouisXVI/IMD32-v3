@@ -16,3 +16,20 @@ video {
 body {
   font-family: var(--font-family-primary);
 }
+
+:root {
+  --color-primary: #000;
+  --color-primary-hover: #343434;
+
+  --color-secondary: #ffffff;
+  --color-secondary-hover: #b4bbc0;
+  --color-secondary-text: #000;
+
+  --color-disabled-primary: #bbb;
+  --color-disabled-primary-text: #fff;
+
+  --color-disabled-secondary: #eceeef;
+  --color-disabled-secondary-text: #bbb;
+
+  --radius: 1rem;
+}
