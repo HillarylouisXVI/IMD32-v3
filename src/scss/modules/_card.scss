@@ -35,6 +35,10 @@
   font-size: 0.875rem;
   font-weight: 400;
 }
+.card-title,
+.card-subtitle {
+  margin: 0;
+}
 
 .card-details {
   display: flex;
@@ -46,6 +50,10 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.card-price strong {
+  font-weight: 600;
 }
 
 .card-airport {
@@ -69,19 +77,20 @@
 
 .favorite-btn {
   display: flex;
-
   justify-content: center;
   align-items: center;
 
   width: 2rem;
   height: 2rem;
 
-  background: transparent;
-  border: none;
+  background-color: transparent;
+
+  border: 0.0625rem solid #b4bbc0;
+  border-radius: 4rem;
 
   cursor: pointer;
 
-  transition: 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .favorite-btn:hover {
@@ -89,7 +98,7 @@
 }
 
 .favorite-btn:hover {
-  background-color: #f4f4f4;
+  background-color: #d3e0fc;
   border-radius: 50%;
 }
 
