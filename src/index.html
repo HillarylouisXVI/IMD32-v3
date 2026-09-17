@@ -15,6 +15,51 @@
   <body>
     <form class="filters">
       <h2 class="filters__title">Start booking your flight now</h2>
+
+      <fieldset class="filters__trip-type">
+        <label>
+          <input type="radio" name="trip" />
+          One way
+        </label>
+
+        <label>
+          <input type="radio" name="trip" checked />
+          Round trip
+        </label>
+      </fieldset>
+
+      <div class="filters__fields">
+        <label class="filter-field">
+          <span class="filter-field__label">From</span>
+          <input type="text" value="Geneva" />
+        </label>
+
+        <button class="swap-button" type="button">
+          <!-- SVG -->
+        </button>
+
+        <label class="filter-field">
+          <span class="filter-field__label">To</span>
+          <input type="text" value="San Francisco" />
+        </label>
+
+        <label class="filter-field">
+          <span class="filter-field__label">From</span>
+          <input type="date" />
+        </label>
+
+        <label class="filter-field">
+          <span class="filter-field__label">Until</span>
+          <input type="date" />
+        </label>
+
+        <label class="filter-field">
+          <span class="filter-field__label">Passengers</span>
+          <input type="number" min="1" value="1" />
+        </label>
+
+        <button class="btn-secondary">Search</button>
+      </div>
     </form>
     <script src="js/main.js" type="module"></script>
   </body>
