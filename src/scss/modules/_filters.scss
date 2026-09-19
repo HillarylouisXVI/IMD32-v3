@@ -115,13 +115,8 @@
     width: 100%;
     appearance: none;
   }
-
-  input[type="date"]::-webkit-calendar-picker-indicator {
-    filter: invert(1);
-    opacity: 0.6;
-    cursor: pointer;
-  }
 }
+
 .route-field {
   display: flex;
   align-items: center;
@@ -140,6 +135,16 @@
   flex: 1;
   min-width: 0;
   cursor: text;
+
+  input {
+    font-size: 0.95rem;
+    color: var(--Primary-0);
+    background: transparent;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    appearance: none;
+  }
 }
 
 .swap-button {

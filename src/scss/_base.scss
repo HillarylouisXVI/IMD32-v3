@@ -38,3 +38,10 @@ body {
   --Primary-900-50: rgba(0, 0, 0, 0.5);
   --Primary-900-70: rgba(0, 0, 0, 0.7);
 }
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+}
