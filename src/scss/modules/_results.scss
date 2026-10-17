@@ -1,6 +1,6 @@
 .results {
   display: grid;
-  grid-template-columns: auto max-content;
+  grid-template-columns: minmax(0, 1fr) fit-content(100%);
   column-gap: 2.5rem;
   padding: 5rem 2.5rem;
   align-items: start;
