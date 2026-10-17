@@ -20,24 +20,38 @@
   </head>
   <body>
     <section class="hero">
-      <img
-        class="hero__image"
-        src="images/plane.jpg?as=webp"
-        alt="avion en vol"
-      />
+      <img class="hero__image" src="images/plane.jpg" alt="Avion en vol" />
       <div class="hero__container">
         <header class="hero__header">
-          <include src="./components/navigation.html"></include>
-        </header>
-
-        <div class="hero__content">
-          <h1 class="hero__title">Ready for take off?</h1>
-
-          <div class="hero__filters">
-            <include src="./components/filters.html"></include>
+          <include src="./Components/navigation.html"></include>
+          <div class="hero__content">
+            <h1 class="hero__title">Ready for take off?</h1>
+            <div class="hero__filters">
+              <include src="./Components/filters.html"></include>
+            </div>
           </div>
-        </div>
+        </header>
       </div>
+    </section>
+
+    <section class="results">
+      <include src="./Components/search-summary.html"></include>
+
+      <div class="results__grid">
+        <include src="./Components/card.html"></include>
+        <include src="./Components/card.html"></include>
+        <include src="./Components/card.html"></include>
+        <include src="./Components/card.html"></include>
+        <include src="./Components/card.html"></include>
+        <include src="./Components/card.html"></include>
+        <include src="./Components/card.html"></include>
+        <include src="./Components/card.html"></include>
+        <include src="./Components/card.html"></include>
+      </div>
+
+      <button class="btn btn-primary results__more" type="button">
+        See more results
+      </button>
     </section>
 
     <script src="js/main.js" type="module"></script>

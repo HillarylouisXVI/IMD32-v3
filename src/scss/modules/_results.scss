@@ -1,0 +1,20 @@
+.results {
+  display: grid;
+  grid-template-columns: auto max-content;
+  column-gap: 2.5rem;
+  padding: 5rem 2.5rem;
+  align-items: start;
+
+  &__grid {
+    grid-column: 2 / span 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  &__more {
+    grid-column: 2 / span 3;
+    justify-self: center;
+    margin-top: 1.5rem;
+  }
+}

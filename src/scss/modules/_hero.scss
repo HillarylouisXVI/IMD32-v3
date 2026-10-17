@@ -30,15 +30,19 @@
 
   &__header {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
     align-self: stretch;
+    gap: 2rem;
   }
 
   &__content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 1.5rem;
     align-self: stretch;
   }
 

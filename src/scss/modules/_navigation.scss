@@ -1,6 +1,7 @@
 .nav {
   display: inline-flex;
   align-items: center;
+  align-self: flex-end;
   padding: 0.25rem;
   border-radius: 3rem;
   background: var(--Primary-900-50);
