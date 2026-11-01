@@ -6,15 +6,17 @@
   align-items: start;
 
   &__grid {
-    grid-column: 2 / span 3;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    width: 60.25rem;
+    grid-template-columns: repeat(3, fit-content(100%));
+    grid-template-rows: repeat(4, fit-content(100%));
+    column-gap: 2rem; /* 32px */
+    row-gap: 2rem;
+    grid-auto-flow: row;
   }
 
   &__more {
-    grid-column: 2 / span 3;
+    grid-column: 1 / -1;
     justify-self: center;
-    margin-top: 4rem;
   }
 }
