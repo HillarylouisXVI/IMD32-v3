@@ -1,0 +1,142 @@
+.footer {
+  padding: 2.5rem;
+  background: var(--Primary-200);
+  color: var(--Primary-0);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 4rem;
+    padding: 1.5rem 2.5rem;
+    border-radius: 1.25rem;
+    background: var(--Primary-900-50);
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 4rem;
+  }
+
+  /* Newsletter */
+  &__newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  &__field {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.75rem;
+    background: var(--Primary-800);
+
+    &:focus-within {
+      outline: 0.125rem solid var(--Primary-0);
+      outline-offset: 0.125rem;
+    }
+  }
+
+  &__label {
+    font-size: 0.75rem;
+    line-height: normal;
+    color: var(--color-text-secondary);
+  }
+
+  &__input {
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: var(--Primary-0);
+    font-size: 0.875rem;
+    line-height: normal;
+    outline: none;
+
+    &::placeholder {
+      color: var(--Primary-0);
+      opacity: 1;
+    }
+  }
+
+  /* Navigations */
+  &__navs {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.75rem;
+  }
+
+  &__nav-title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &--inline {
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+
+  &__link {
+    color: var(--Primary-0);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      text-decoration: underline;
+    }
+  }
+
+  &__social {
+    align-self: flex-end;
+  }
+}
